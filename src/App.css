@@ -1,0 +1,224 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+.App {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+#leftMenu {
+  height: 100%;
+  width: 81px;
+  border-radius: 0px;
+  position: absolute;
+  left: 0%;
+  right: 94.38%;
+  top: 0%;
+  bottom: 0%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#UserImage {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  margin-top: 35px;
+  border-radius: 50%;
+}
+
+.NavigationOption {
+  display: flex;
+  justify-content: center;
+  width: 81px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+}
+
+.NavigationOption:nth-child(1) {
+  background: linear-gradient(180deg, #679CF6 0%, #4072EE 100%);
+  box-shadow: 0px 5px 15px rgba(7, 8, 8, 0.5);
+  border-radius: 5px;
+}
+
+#AddNewDiv {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 20px;
+  background: #29CB97;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#addNewPlus {
+  font-size: 20px;
+}
+
+#center {
+  position: absolute;
+  height: 420px;
+  width: 340px;
+  left: 122px;
+  top: 30px;
+  border-radius: [object Object]px;
+}
+
+#myDashBoard {
+  width: 382px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ActiveUsers {
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 11.04%;
+  padding-top: 21px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+}
+
+#UserHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#UserHeader>p {
+  font-size: 14px;
+}
+
+#forSpan {
+  font-size: 12px;
+  color: gray;
+}
+
+
+#SingleActiveUser {
+  /* height: 40px; */
+  width: 340px;
+  margin-top: 34px;
+  margin-bottom: 50px;
+  border-radius: [object Object]px;
+}
+
+#SingleActiveUser>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#SingleActiveUser>div>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#SingleActiveUser>div>div>div {
+  margin-left: 20px;
+}
+
+#SingleActiveUser>div>div>div>p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: gray;
+}
+
+.dotes {
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ActiveUserImage {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.level {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+
+/* CSS for Dark Mode Button Start*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
